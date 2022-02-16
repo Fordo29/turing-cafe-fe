@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Reservations from '../Components/Reservations';
+import getReservations from './apicalls';
+
 
 
 
@@ -12,7 +14,11 @@ class App extends Component {
     }
   }
   componentDidMount = () => {
-  
+    getReservations()
+    .then(data => {
+      this.setState({ reservations: data})
+    })
+    .catch(error => console.log(error))
   }
 
   render() {
