@@ -44,12 +44,10 @@ describe('Turing Cafe Reservation Displays', () => {
         cy.get('input').get('.time-input').type('8')
         cy.get('input').get('.number-input').type('7')
         cy.get('button').contains("Make a reservation").click()
-         cy.get('.card').contains('Christine')
+        cy.get('.card').contains('Christine')
+        cy.get('.card').contains('12/26')
+        cy.get('.card').contains('8 pm')
+        cy.get('.card').contains('Number of Guests: 7')
+        
     });
-  
-
 });
-
-
-// Write a test that checks that when data is put into the form, the value is reflected in that form input.
-// Write a test to check the user flow of adding a new reservation to the page.
