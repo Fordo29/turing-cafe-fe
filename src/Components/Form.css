@@ -1,0 +1,15 @@
+form {
+    margin: auto;
+}
+
+input, button {
+    margin: 5px;
+    width: 18%;
+    border: 2px solid teal;
+    font-size: 14px;
+}
+
+button {
+    background-color: teal;
+    color: white;
+}
