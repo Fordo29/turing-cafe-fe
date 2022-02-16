@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from './Card';
+import './Reservation.css';
 
 
 const Reservations = ({ reservations }) => {
-    console.log({reservations})
     const reservationCards = reservations.map(reservation => {
         return (
             <Card 
@@ -17,7 +17,7 @@ const Reservations = ({ reservations }) => {
         )
     })
     return (
-        <div>
+        <div className='reservation-container'>
             {reservationCards}
         </div>
     )

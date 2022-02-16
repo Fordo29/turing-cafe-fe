@@ -4,8 +4,6 @@ import Reservations from '../Components/Reservations';
 import getReservations from './apicalls';
 
 
-
-
 class App extends Component {
   constructor() {
     super();
